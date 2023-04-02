@@ -1,17 +1,20 @@
 #include <stdio.h>
 int main()
 {
-    int n ;
-    printf("enter your number:");
+    int n;
+    printf("Enter your number:");
     scanf("%d", &n);
-    if (n%2 == 0)
+    if (n < 0)
     {
-        printf("Your number is odd");
+        printf("your number %d is negetive", n);
+    }
+    else if (n>0)
+    {
+        printf("your number %d is positive", n);
 
     }
     else {
-        printf("your number is even");
-
+        printf("your number is 0");
     }
     return 0;
 }
