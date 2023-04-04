@@ -1,18 +1,31 @@
 #include <stdio.h>
+
 int main()
 {
-    int num1, num2;
-    printf("enter your 1st number:");
-    scanf("%d", &num1);
-    printf("enter your 2nd number:");
-    scanf("%d", &num2);
-    if (num1 == num2)
+    char input;
+    printf("Input the grade: ");
+    scanf(" %c", &input); // add a space before %c to consume any whitespace or newline left in the buffer
+
+    if (input == 'E') 
     {
-        printf("number1 number2 is equal");
+        printf("You have chosen: Excellent\n"); 
     }
-    else
+    else if (input == 'V')
     {
-        printf("not equal");
+        printf("You have chosen: Very Good\n");
     }
+    else if (input == 'G')
+    {
+        printf("You have chosen: Good\n");
+    }
+    else if (input == 'A')
+    {
+        printf("You have chosen: Average\n");
+    }
+    else if (input == 'F')
+    {
+        printf("You have chosen: Fail\n");
+    }
+
     return 0;
 }
