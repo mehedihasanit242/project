@@ -2,19 +2,20 @@
 int main()
 {
     int n;
-    printf("Enter your number:");
+    printf("enter your year:");
     scanf("%d", &n);
-    if (n < 0)
+    if (n%4==0&&n%100!=0)
     {
-        printf("your number %d is negetive", n);
-    }
-    else if (n>0)
-    {
-        printf("your number %d is positive", n);
+        printf("%d is leap year", n);
 
     }
+    else if (n%4==0&&n%100==0&&n%400==0)
+    {
+        /* code */
+        printf(" %d is leap year ", n);
+    }
     else {
-        printf("your number is 0");
+        printf("%d is not", n);
     }
     return 0;
 }
