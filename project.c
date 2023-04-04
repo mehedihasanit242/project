@@ -1,21 +1,18 @@
 #include <stdio.h>
 int main()
 {
-    int n;
-    printf("enter your year:");
-    scanf("%d", &n);
-    if (n%4==0 && n%100!=0)
+    int num1, num2;
+    printf("enter your 1st number:");
+    scanf("%d", &num1);
+    printf("enter your 2nd number:");
+    scanf("%d", &num2);
+    if (num1 == num2)
     {
-        printf("%d is leap year", n);
-
+        printf("number1 number2 is equal");
     }
-    else if (n%4==0 && n%100==0 && n%400==0)
+    else
     {
-        /* code */
-        printf(" %d is leap year ", n);
-    }
-    else {
-        printf("%d is not", n);
+        printf("not equal");
     }
     return 0;
 }
