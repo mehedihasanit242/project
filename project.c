@@ -26,6 +26,9 @@ int main()
     {
         printf("You have chosen: Fail\n");
     }
+    else {
+        printf("you enter wrong keyword");
+    }
 
     return 0;
 }
